@@ -1,0 +1,28 @@
+#include "slay viber.cpp"
+
+int main() {
+	
+	// slay viber objects 
+	SlayViber  user_1("daviti", "password123", false , 2300, true , false );
+	SlayViber  user_2;
+	SlayViber  user_3;
+	
+	cout << "----------information of 1 object------------ " << endl;
+	user_1.print();
+	cout << "---------registration of 2 object --------------" << endl;
+	user_2.registration();
+	cout << "--------- registration of 3 object--------------" << endl;
+	user_3.registration();
+
+	cout << "----------2 object is starting  live------------------ " << endl;
+	user_2.goLive();
+	cout << "----------1 object is starting  live------------------ " << endl;
+	user_1.goLive();
+	
+	cout << "-----------------------visiting ---------------------------" << endl;
+	user_1.visit(user_2);
+	cout << "-----------------------visiting ---------------------------" << endl;
+	user_2.visit(user_3);
+	
+
+}
